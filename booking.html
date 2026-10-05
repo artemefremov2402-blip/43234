@@ -1,0 +1,210 @@
+ <!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись - Салон красоты Эстетика</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        </section>
+
+    <footer class="footer">
+        <!-- ... футер ... -->
+    </footer>
+
+    <!-- ✅ ЭТА СТРОКА ОБЯЗАТЕЛЬНА -->
+    <script src="js/main.js"></script>
+</body>
+</html>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <h1>Эстетика</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="services.html">Услуги</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="booking.html" class="btn-booking active">Записаться</a></li>
+            </ul>
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Онлайн запись</h1>
+        <p>Запишитесь через Telegram за 30 секунд</p>
+    </section>
+
+    <section class="booking-content">
+        <div class="container">
+            <div class="booking-grid">
+                <div class="booking-info">
+                    <h2>Как записаться?</h2>
+                    <div class="booking-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Выберите услугу</h3>
+                                <p>Определитесь с процедурой, которую хотите получить</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Напишите в Telegram</h3>
+                                <p>Нажмите кнопку ниже и напишите нашему администратору</p>
+                            </div>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Получите подтверждение</h3>
+                                <p>Мы подтвердим запись и напомним о визите</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="telegram-cta">
+                        <h3>Быстрая запись через Telegram</h3>
+                        <p>Нажмите кнопку, чтобы начать диалог с нашим администратором</p>
+                        <a href="https://t.me/div_html" target="_blank" class="btn-telegram">
+                            <i class="fab fa-telegram"></i>
+                            Написать в Telegram
+                        </a>
+                        <p class="telegram-note">Обычно отвечаем в течение 5 минут</p>
+                    </div>
+                </div>
+
+                <div class="booking-form-section">
+                    <h2>Или заполните форму</h2>
+                    <p class="form-subtitle">Мы свяжемся с вами для подтверждения</p>
+                    <form class="booking-form" id="bookingForm">
+                        <div class="form-group">
+                            <label for="name">Ваше имя *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Услуга *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Выберите услугу</option>
+                                <option value="haircut">Стрижка</option>
+                                <option value="coloring">Окрашивание</option>
+                                <option value="styling">Укладка</option>
+                                <option value="manicure">Маникюр</option>
+                                <option value="pedicure">Педикюр</option>
+                                <option value="facial">Чистка лица</option>
+                                <option value="peeling">Пилинг</option>
+                                <option value="massage">Массаж</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Желаемая дата</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Желаемое время</label>
+                            <select id="time" name="time">
+                                <option value="">Выберите время</option>
+                                <option value="09:00">09:00</option>
+                                <option value="10:00">10:00</option>
+                                <option value="11:00">11:00</option>
+                                <option value="12:00">12:00</option>
+                                <option value="13:00">13:00</option>
+                                <option value="14:00">14:00</option>
+                                <option value="15:00">15:00</option>
+                                <option value="16:00">16:00</option>
+                                <option value="17:00">17:00</option>
+                                <option value="18:00">18:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="20:00">20:00</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Комментарий</label>
+                            <textarea id="comment" name="comment" rows="4" placeholder="Дополнительные пожелания"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary btn-full">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="booking-benefits">
+                <h2>Почему удобно записываться онлайн?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Экономия времени</h3>
+                        <p>Запись занимает всего 30 секунд</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-bell"></i>
+                        <h3>Напоминания</h3>
+                        <p>Получите напоминание о визите</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-gift"></i>
+                        <h3>Бонусы</h3>
+                        <p>Скидка 10% при онлайн записи</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Эстетика</h3>
+                    <p>Премиальный салон красоты</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Контакты</h4>
+                    <p><i class="fas fa-phone"></i> +7 (999) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> info@estetika.ru</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Мы в соцсет
+<form class="booking-form" id="bookingForm">
+    <div class="form-group">
+        <label for="name">Ваше имя *</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Телефон *</label>
+        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+7 (___) ___-__-__" required>
+    </div>
+    <div class="form-group">
+        <label for="service">Услуга *</label>
+        <select id="service" name="service" required>
+            <!-- ... -->
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="date">Желаемая дата</label>
+        <input type="date" id="date" name="date" autocomplete="off">
+    </div>
+    <div class="form-group">
+        <label for="time">Желаемое время</label>
+        <select id="time" name="time">
+            <!-- ... -->
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="comment">Комментарий</label>
+        <textarea id="comment" name="comment" rows="4" autocomplete="off"></textarea>
+    </div>
+    <button type="submit" class="btn-primary btn-full">Отправить заявку</button>
+</form>
